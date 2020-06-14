@@ -1,6 +1,8 @@
-<p>contact works!</p>
-<div class="test">
-    <input type="text" name="" id="">
-    <span>{{changeText}}</span>
-    <button (click)="emit()">click</button>
-</div>
+
+<form onsubmit="return true" class="test">
+    <h2>Please tell us your feedback</h2>
+   <input type="text" class="text" required placeholder="name">
+   <input type="email" class="text" required placeholder="email">
+   <input type="text" class="text-large" required placeholder="feedback">
+   <button (click)="sent()" class="submit">submit</button>
+</form>

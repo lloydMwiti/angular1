@@ -12,9 +12,7 @@
     
     <input #nameTyped type="text" placeholder="Your_name: " required name="" 
     name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name"class="quote">
-    <div *ngFor="let post in posts">
-        <div>{{post.name}}</div>
-    </div>
+   
     
     
     <button class="create-btn" type="submit" (click)="logValue(quoteTyped.value,authorTyped.value,nameTyped.value) " [disabled]="form.invalid">create</button>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-show-qoute',
   templateUrl: './show-qoute.component.html',
@@ -11,7 +12,8 @@ export class ShowQouteComponent implements OnInit {
 
   constructor() { }
   
-  public posts=[
+
+    public  posts=[
     {'quote' : this.lorem , 'author' : 'brian' , 'name' : 'joan'},
     {'quote' : this.lorem , 'author' : 'tony' , 'name' : 'grishon'},
     {'quote' : this.lorem , 'author' : 'boyd' , 'name' : 'mary'},

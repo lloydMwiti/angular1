@@ -8,13 +8,61 @@
         </p>
     </div>
     <div>
-        <app-add-qoute></app-add-qoute>
+        <form #form="ngForm"  (submit)="onSubmit()" class="create-quote">
+            <h3>Type Your Quote Here</h3>
+            <textarea #quoteTyped  name="" required minlength="8" maxlength="300"
+            name="Qoute" #Qoute="ngModel" [(ngModel)]="service.formData.Qoute" class="type-qt" >
+        
+            </textarea>
+            
+             
+            <input #authorTyped type="text" placeholder="Author_name:" required name="" 
+            name="Author" #Author="ngModel" [(ngModel)]="service.formData.Author"class="quote">
+            
+            
+            <input #nameTyped type="text" placeholder="Your_name: " required name="" 
+            name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name"class="quote">
+           
+            
+            
+            <button class="create-btn" type="submit" (click)="logValue(quoteTyped.value,authorTyped.value,nameTyped.value) " [disabled]="form.invalid">create</button>
+        </form>
+        <!-- <app-add-qoute></app-add-qoute> -->
     </div>
     
 </form>
 
+<div class="w100">
+    <div class="quotes">
+        <div class="title-holder">
+        <h1>See More Quotes</h1>
+    </div>
+        <div class="quote-cards" *ngFor="let post of posts">
+            <div class="name-area">
+                    <div class="poster">
+                        <div class="user-img"></div>
+                        <p >{{post.name}}</p> 
+                    </div>
+            </div>
+           
+            <div class="qoute-area">{{post.quote}}</div>
+            <div class="author-area">{{post.author}}</div>
+            <div class="like-area">
+                
+                <div class="dis-flex">
+                <button class="like-btn" (click)="upvote()" style="background-color: rgb(68, 0, 255); color:white;"> {{upvoteCount}} up</button>
+                <button class="like-btn" (click)="dislike()" style="background-color: rgb(76, 0, 255); color:white;"> {{dislikeCount}} down</button>
+            </div>
+            <div class="dis-flex">
+                <button class="like-btn" style="background-color: rgb(255, 72, 0); color:white;">delete</button>
+                <button class="like-btn" style="background-color: rgb(223, 223, 223); color:rgb(48, 48, 48);">edit</button>
+            </div>  
+            </div>
 
-<app-show-qoute></app-show-qoute>
+        </div>
+
+</div></div>
+<!-- <app-show-qoute></app-show-qoute> -->
     <!-- end card -->
     
   

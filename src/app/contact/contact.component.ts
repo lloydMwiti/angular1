@@ -23,4 +23,7 @@ export class ContactComponent implements OnInit {
       this.home= new quote;
       this.dataaray.push(this.home);
   }
+  sent(){
+    alert("your feedback has been recieved")
+  }
 }
