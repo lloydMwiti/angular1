@@ -1,0 +1,29 @@
+<div class="w100">
+    <div class="quotes">
+        <div class="title-holder">
+        <h1>See More Quotes</h1>
+    </div>
+        <div class="quote-cards" *ngFor="let post of posts">
+            <div class="name-area">
+                    <div class="poster">
+                        <div class="user-img"></div>
+                        <p >{{post.name}}</p> 
+                    </div>
+            </div>
+            <div class="qoute-area">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, aliquid distinctio? Id debitis, sapiente facere quas architecto aut suscipit ea minus molestia</div>
+            <div class="author-area">{{post.author}}</div>
+            <div class="like-area">
+                
+                <div class="dis-flex">
+                <button class="like-btn" style="background-color: rgb(68, 0, 255); color:white;">  up</button>
+                <button class="like-btn" style="background-color: rgb(76, 0, 255); color:white;">  down</button>
+            </div>
+            <div class="dis-flex">
+                <button class="like-btn" style="background-color: rgb(255, 72, 0); color:white;">delete</button>
+                <button class="like-btn" style="background-color: rgb(223, 223, 223); color:rgb(48, 48, 48);">edit</button>
+            </div>  
+            </div>
+
+        </div>
+
+</div></div>

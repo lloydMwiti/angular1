@@ -1,0 +1,138 @@
+.w100{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.top-section{
+    padding-top: 4rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem .5rem 1rem .5rem;
+    min-height: 93vh ;
+    background-color: rgb(0, 102, 255);
+    flex-wrap: wrap;
+}
+.title-holder{
+    margin-top: 3rem;
+    width: 100%;
+    padding:1rem .5rem 1rem .8rem;
+}
+.desc{
+    width: calc(100vw - 53rem);
+    min-width: 20rem;
+    max-width: 26rem;
+    color: white;
+}
+.line{
+    display: flex;
+    width: 100%;
+}
+.quotes{
+    margin-top: 2rem;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.quote-cards{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    max-width: 16rem;
+    min-width: 14.2rem;
+    box-shadow: 0 .1rem .6rem -.3rem black;
+    min-height: 15rem;
+    border-radius: .3rem;
+    margin: .3rem;
+}
+.qoute-area{
+    overflow-x: hidden;
+}
+.like-area{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0 .3rem .3rem 0;
+    padding: 0rem .5rem;
+    align-self: flex-end;
+    height: 2.3rem;
+    width: 100%;
+}
+.like-btn{
+    font-size: .74rem;
+    border: none;
+    margin: 0 .1rem;
+    height: 1.4rem;
+    padding: 0 .4rem;
+    display: flex;
+    align-items: center;
+    border-radius: .1rem;
+}
+.poster{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.name-area{
+    background-color: white;
+    padding:.1rem .5rem ;
+    width: 100%;
+    align-self: flex-start;
+}
+.user-img{
+    height: 1.4rem;
+    background-color: black;
+    margin-right: .2rem;
+    width: 1.4rem;
+    border-radius: 2rem;
+}
+.dis-flex{
+    display: flex;
+    align-items: center;
+}
+.dis-flex *{
+    cursor: pointer;
+}
+.qoute-area{
+    font-size: .8rem;
+    padding: 0 .8rem;
+}
+.author-area{
+    color: grey;
+    font-size: 1rem;
+    padding:.2rem .7rem;
+}
+
+@media (orientation:portrait){
+    *{
+        font-size: 1.3rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    .burger{
+        z-index: 8;
+        display: flex;
+    }
+    /* .drawer{
+        display: flex;
+    } */
+    .quote-cards{
+        width: 90%;
+        margin: 2.5% 5%;
+        max-width: 100vw;
+    }
+    .quotes{
+        width: 100vw;
+        padding: 0;margin: 0;
+        max-width: 100vw;
+    }
+}

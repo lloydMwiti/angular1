@@ -1,0 +1,21 @@
+<form #form="ngForm"  (submit)="onSubmit()" class="create-quote">
+    <h3>Type Your Quote Here</h3>
+    <textarea #quoteTyped  name="" required minlength="8" maxlength="300"
+    name="Qoute" #Qoute="ngModel" [(ngModel)]="service.formData.Qoute" class="type-qt" >
+
+    </textarea>
+    
+     
+    <input #authorTyped type="text" placeholder="Author_name:" required name="" 
+    name="Author" #Author="ngModel" [(ngModel)]="service.formData.Author"class="quote">
+    
+    
+    <input #nameTyped type="text" placeholder="Your_name: " required name="" 
+    name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name"class="quote">
+    <div *ngFor="let post in posts">
+        <div>{{post.name}}</div>
+    </div>
+    
+    
+    <button class="create-btn" type="submit" (click)="logValue(quoteTyped.value,authorTyped.value,nameTyped.value) " [disabled]="form.invalid">create</button>
+</form>
