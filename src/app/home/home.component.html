@@ -43,6 +43,7 @@
                         <div class="user-img"></div>
                         <p >{{post.name}}</p> 
                     </div>
+                    <div class="date">{{post.date | date:'shortTime'}}</div>
             </div>
            
             <div class="qoute-area">{{post.quote}}</div>
@@ -50,8 +51,8 @@
             <div class="like-area">
                 
                 <div class="dis-flex">
-                <button class="like-btn" (click)="upvote()" style="background-color: rgb(68, 0, 255); color:white;"> {{upvoteCount}} up</button>
-                <button class="like-btn" (click)="dislike()" style="background-color: rgb(76, 0, 255); color:white;"> {{dislikeCount}} down</button>
+                <button class="like-btn" (click)="upvote()" style="background-color: rgb(68, 0, 255); color:white;"> {{post.upvoteCount}} up</button>
+                <button class="like-btn" (click)="dislike()" style="background-color: rgb(76, 0, 255); color:white;"> {{post.dislikeCount}} down</button>
             </div>
             <div class="dis-flex">
                 <button class="like-btn" style="background-color: rgb(255, 72, 0); color:white;">delete</button>

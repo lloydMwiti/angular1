@@ -208,7 +208,13 @@
     background-color: white;
     padding:.1rem .5rem ;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     align-self: flex-start;
+}
+.date{
+    font-size: .8rem;
 }
 .user-img{
     height: 1.4rem;

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { quote} from '../models/home-model';
+import { quote } from '../models/home-model';
 
 import { Observable } from 'rxjs';
 
@@ -18,4 +18,10 @@ export class HomeService {
       alert(quote);
       
      }
+}
+
+class car {
+  tyre(wheelsize){
+
+  }
 }

@@ -12,7 +12,8 @@ export class HomeComponent implements OnInit {
 
   upvoteCount:number = 0;
   dislikeCount:number = 0;
-
+  todayDate : Date =new Date();
+  createDate : Date;
 
   constructor(public service:HomeService) { 
 
@@ -20,8 +21,8 @@ export class HomeComponent implements OnInit {
 
   lorem = " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatem repudiandae commodi dignissimos ducimus culpa et, molesti ";
  public  posts=[
-    {'quote' : this.lorem , 'author' : 'brian' , 'name' : 'joan'},
-    {'quote' : this.lorem , 'author' : 'tony' , 'name' : 'grishon'},
+    {'quote' : this.lorem , 'author' : 'brian' , 'name' : 'joan' , 'date' : this.todayDate,'upvoteCount':0,'dislikeCount':2},
+    {'quote' : this.lorem , 'author' : 'tony' , 'name' : 'grishon',  'date' : this.todayDate,'upvoteCount':1,'dislikeCount':0},
    
   ];
   
@@ -42,23 +43,24 @@ export class HomeComponent implements OnInit {
     console.log(value2);
     console.log(value3);
 
-    this.posts.push({quote : value1, author : value2 , name : value3})
+   
+    this.posts.push({quote : value1, author : value2 , name : value3 , date : new Date(),upvoteCount: 0,dislikeCount:0})
     this.resetFrom();
     alert('submited! scroll down to see your post');
     
   }
-  onSubmit(){
-    
-    
-    
+  onSubmit(){    
   }
   ngOnInit(): void {
     this.resetFrom();
   }
   upvote(){
+    
     this.upvoteCount +=1;
+    this.dislikeCount =0;
   }
   dislike(){
-    this.dislikeCount +=1;
+    this.dislikeCount =1;
+    this.upvoteCount =0;
   }
 }
