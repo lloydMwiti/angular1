@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Preview 
 
-to preview the work please click here https://lloydMwiti.github.io/Mc-Angular1/
+to preview the work please click here https://lloydMwiti.github.io/angular1/
 
 ## Developer Details
 

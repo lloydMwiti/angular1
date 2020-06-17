@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HomeService } from '../services/home.service';
-import { QuoteModel } from '../models/QuoteModel';
+
 import { isNgTemplate } from '@angular/compiler';
 import { element } from 'protractor';
 
