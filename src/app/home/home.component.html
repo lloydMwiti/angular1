@@ -31,41 +31,51 @@
     </div>
     
 </form>
-
+<div class="large">
 <div class="w100">
     <div class="quotes">
         <div class="title-holder">
         <h1>See More Quotes</h1>
     </div>
-        <div class="quote-cards" *ngFor="let post of posts">
+        <div class="quote-cards" *ngFor="let post of posts; let i = index">
             <div class="name-area">
                     <div class="poster">
-                        <div class="user-img"></div>
+                        <div class="user-img" #usrId>{{post.id}}</div>
                         <p >{{post.name}}</p> 
                     </div>
                     <div class="date">{{post.date | date:'shortTime'}}</div>
             </div>
            
-            <div class="qoute-area">{{post.quote}}</div>
-            <div class="author-area">{{post.author}}</div>
+            <div class="qoute-area" #usrup >{{post.quote}}</div>
+            <div class="author-area" #usrdown>{{post.author}}</div>
             <div class="like-area">
                 
                 <div class="dis-flex">
-                <button class="like-btn" (click)="upvote()" style="background-color: rgb(68, 0, 255); color:white;"> {{post.upvoteCount}} up</button>
-                <button class="like-btn" (click)="dislike()" style="background-color: rgb(76, 0, 255); color:white;"> {{post.dislikeCount}} down</button>
+                <button class="like-btn"   (click)="upvote(usrId.innerText)" style="background-color: rgb(68, 0, 255); color:white;"> {{post.upvoteCount}} up</button>
+                <button class="like-btn"  (click)="dislike(usrId.innerText)" style="background-color: rgb(76, 0, 255); color:white;"> {{post.dislikeCount}} down</button>
             </div>
             <div class="dis-flex">
-                <button class="like-btn" style="background-color: rgb(255, 72, 0); color:white;">delete</button>
+                <button class="like-btn"(click)="removeQuote(usrId.innerText)" style="background-color: rgb(255, 72, 0); color:white;">delete</button>
                 <button class="like-btn" style="background-color: rgb(223, 223, 223); color:rgb(48, 48, 48);">edit</button>
             </div>  
             </div>
 
         </div>
 
-</div></div>
+</div></div> 
 <!-- <app-show-qoute></app-show-qoute> -->
     <!-- end card -->
-    
-  
-     
+    <div class="center">
+  <footer>
+      <div class="down">
+          <h4>created by</h4>
+          <p>Lloyd Mwiti</p>
+      </div>
+      <div class="down">
+        <h4>contact me</h4>
+        <p>lloydmwiti4@gmail.com</p>
+    </div>
+  </footer>
+  </div>
+  </div>  
 

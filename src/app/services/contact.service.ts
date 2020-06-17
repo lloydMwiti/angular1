@@ -7,9 +7,3 @@ export class ContactService {
 
   constructor() { }
 }
-
-class car {
-  tyre(wheelsize){
-
-  }
-}

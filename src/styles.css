@@ -10,6 +10,10 @@
     outline: none;
 }
 body{
+    background-image: url(./app/images/PYRKI_mistypines_FVpO.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -130,6 +134,9 @@ nav{
     background-color: white;
     width: 14rem;
     max-width: 75vw;
+}
+.top-section{
+    background-color: white;
 }
 @media (orientation:portrait){
     .nav-links{

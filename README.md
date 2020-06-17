@@ -1,10 +1,19 @@
 # App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
+This project was created in angular by Lloyd Mwiti as a base plate for a web app that creates deletes like and dislikes quotes.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Preview 
+
+to preview the work please click here https://lloydMwiti.github.io/Mc-Angular1/
+
+## Developer Details
+
+developer : Lloyd Mwiti \
+contact : lloydmwiti4@gmai.com
 
 ## Code scaffolding
 

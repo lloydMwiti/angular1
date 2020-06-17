@@ -1,19 +1,22 @@
 .test{
     position: absolute;
     top:25%;
-    bottom:0;
+    
     float: center;
-    left: 40%;
-    right: 0;
+    left: 35%;
+    
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 20rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .5rem;
 }
 .text{
     color: rgb(58, 57, 57);
     margin: .2rem 0;
     padding: .1rem 1rem;
-    width: 20rem;
+    width: 100%;
     border: 1px solid grey;
     border-radius: .2rem;
 }
@@ -21,7 +24,7 @@
     color: rgb(58, 57, 57);
     margin: .2rem 0;
     padding: .1rem 1rem;
-    width: 20rem;
+    width: 100%;
     height: 5rem;
     border: 1px solid grey;
     border-radius: .2rem;
